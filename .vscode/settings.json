@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "git.enabled": false,
+    "git.enabled": true,
     // Path to the git executable
       // Whether auto fetching is enabled.
     "git.autofetch": false,
