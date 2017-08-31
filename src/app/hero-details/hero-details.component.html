@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
     <div *ngIf="hero" class="col-lg-6 text-center">
         <h2>{{hero.name}} details!</h2>
         <div><label>id: </label>{{hero.id}}</div>
@@ -20,8 +20,10 @@
 
       </ul>                   
     </div>
-    <div class="col-lg-6">
-        {{Heroes | json}}
-    </div>
+  </div> -->
 
-</div>
+  <h2>Hero Detail</h2>
+  <h3><i>Just a FormControl</i></h3>
+  <label class="center-block">Name:
+    <input class="form-control" [formControl]="name">
+  </label>

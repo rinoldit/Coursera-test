@@ -8,6 +8,7 @@ import { HeroService} from'./service/hero.service';
 import {HeroesComponent} from './heroes/heroes.component';
 import { RouterModule }   from '@angular/router';
 import { PracticeBasic1Component } from './practice-basic1/practice-basic1.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PracticeBasic1Component } from './practice-basic1/practice-basic1.compo
     BrowserModule,
     FormsModule,
     HttpModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {
         path: 'heroes',
