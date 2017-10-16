@@ -1,0 +1,23 @@
+{
+  "name": "try-angular-demo",
+  "version": "1.0.0",
+  "description": "First Web App In Heroku",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3",
+    "path": "0.12.7",
+    "mongoose": "4.9.3",
+    "body-parser": "1.17.1",
+    "compression": "1.6.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "6.11.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
