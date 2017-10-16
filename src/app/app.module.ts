@@ -5,21 +5,18 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { HamBurgerComponent } from '../app/ham-burger/ham-burger.component';
+// import { HamBurgerComponent } from '../app/ham-burger/ham-burger.component';
 
 @NgModule({
   declarations: [
       AppComponent,
-      HamBurgerComponent,
-     
+      // HamBurgerComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     ReactiveFormsModule,
-    
-
   ],
   providers: [],
   bootstrap: [AppComponent]
