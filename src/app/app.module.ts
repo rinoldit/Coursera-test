@@ -3,34 +3,43 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { HeroDetailsComponent } from './/hero-details/hero-details.component';
-import { HeroService} from'./service/hero.service';
-import {HeroesComponent} from './heroes/heroes.component';
-import { RouterModule }   from '@angular/router';
-import { PracticeBasic1Component } from './practice-basic1/practice-basic1.component';
+import { RouterModule, Routes } from '@angular/router';
+
 import { ReactiveFormsModule } from '@angular/forms';
+import { CustomOneModule } from './modules/customOne/customOne.module';
+import { HeroDetailComponent } from './modules/customOne/Hero_Detail/Hero_Detail.component';
+import { AppRoutes, vv } from './app.routing';
+
+// const appRoutes: Routes = [
+//   { path: '', component: CustomOneModule },
+//   { path: 'hero/:id',      component: HeroDetailComponent },
+//   {
+//     path: 'heroes',
+//     component: HeroListComponent,
+//     data: { title: 'Heroes List' }
+//   },
+//   { path: '',
+//     redirectTo: '/heroes',
+//     pathMatch: 'full'
+//   },
+//   { path: '**', component: PageNotFoundComponent }
+// ];
 
 @NgModule({
   declarations: [
       AppComponent,
-      HeroDetailsComponent,
-      HeroesComponent,
-      PracticeBasic1Component
-  ],
+      vv
+
+],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      {
-        path: 'heroes',
-        component: HeroesComponent
-      }
-    ])
-
+    CustomOneModule.forRoot(),
+    AppRoutes,
   ],
-  providers: [HeroService],
+
   bootstrap: [AppComponent]
 })
 
