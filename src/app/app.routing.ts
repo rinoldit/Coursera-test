@@ -5,10 +5,10 @@ import { DummyComponent } from './Dummy/Dummy.component';
 
 export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'prefix'  },
+  {path: 'dog', component: ComponentOneComponent},
 
-  {path: 'dog', component: ComponentOneComponent,
-  children: [{path: 'cat', loadChildren: 'app/#AppModule'}] },
-   {path: 'cat', component: ComponentTwoComponent },
+  // children: [{path: 'cat', loadChildren: 'app/#AppModule'}],
+  {path: 'cat', component: ComponentTwoComponent },
   {path: 'home', component: DummyComponent}
 ];
 
