@@ -1,4 +1,19 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <h1>DOG</h1>
+        <img src="https://www.what-dog.net/Images/faces2/scroll000.jpg" alt="">
+        <br>
+        <br>
+        <div class="container">
+            <h4>
+                <label for="value Input">Enter Value </label>
+                <input value={{this.parentValue}} (input)="parentValue=$event.target.value" type="text">
+            </h4>
+        </div>
+    </div>
 
-  <h1>DOG</h1>
- <img src="https://www.what-dog.net/Images/faces2/scroll000.jpg" alt="">
- <router-outlet></router-outlet>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <app-component-two [childValue]='parentValue' (save)='send($event)'> </app-component-two>
+    </div>
+
+</div>

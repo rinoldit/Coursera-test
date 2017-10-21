@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-component-two',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./component-two.component.css']
 })
 export class ComponentTwoComponent implements OnInit {
-
+    @Input('childValue') childValue= 'test';
+    @Output('save') save = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit() {
